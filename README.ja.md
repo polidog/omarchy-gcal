@@ -20,6 +20,13 @@
 omarchy plugin add https://github.com/polidog/omarchy-gcal.git --enable
 ```
 
+`--enable` でバーに追加されます。更新と削除:
+
+```bash
+omarchy plugin update io.github.polidog.gcal   # 更新
+omarchy plugin remove io.github.polidog.gcal   # 削除
+```
+
 プラグインは `omarchy-shell` の中でサンドボックスなしに動くので、先にコードを読んでください。QML と JS が 1 つずつです。
 
 ## 設定

@@ -20,6 +20,13 @@ The widget looks for it on `PATH`, `~/.cargo/bin` and `~/.local/bin`.
 omarchy plugin add https://github.com/polidog/omarchy-gcal.git --enable
 ```
 
+`--enable` puts the widget in the bar. Later:
+
+```bash
+omarchy plugin update io.github.polidog.gcal   # pull a newer version
+omarchy plugin remove io.github.polidog.gcal   # uninstall
+```
+
 Plugins run unsandboxed inside `omarchy-shell`, so read the code first — it is one QML file and one JS file.
 
 ## Settings
