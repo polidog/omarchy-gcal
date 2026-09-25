@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "io.github.polidog.gcal",
+  "name": "Google Calendar",
+  "version": "0.1.0",
+  "author": "polidog",
+  "license": "MIT",
+  "description": "Shows your next Google Calendar event in the bar; click for the upcoming list. Uses the gcal CLI (github.com/polidog/gcal).",
+  "kinds": [
+    "bar-widget"
+  ],
+  "activation": "on-demand",
+  "entryPoints": {
+    "barWidget": "Panel.qml"
+  },
+  "barWidget": {
+    "displayName": "Google Calendar",
+    "description": "Next event in the bar, upcoming events in a panel.",
+    "category": "Productivity",
+    "allowMultiple": false,
+    "defaultSection": "right",
+    "defaults": {
+      "days": 7,
+      "refreshMinutes": 5
+    },
+    "schema": [
+      { "key": "days", "type": "number", "label": "Days to list", "defaultValue": 7 },
+      { "key": "refreshMinutes", "type": "number", "label": "Refresh interval (minutes)", "defaultValue": 5 }
+    ]
+  }
+}
